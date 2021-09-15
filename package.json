@@ -1,0 +1,7 @@
+{
+  "name": "clean-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gustavo Manca <gustavo.manca@pixter.com.br>",
+  "license": "MIT"
+}
