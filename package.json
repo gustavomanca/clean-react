@@ -11,6 +11,7 @@
     "test:ci": "npm run test -- --coverage"
   },
   "devDependencies": {
+    "@types/faker": "^5.5.8",
     "@types/jest": "^27.0.1",
     "@types/node": "^13.13.5",
     "@typescript-eslint/eslint-plugin": "^2.31.1",
@@ -20,6 +21,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "faker": "^5.5.3",
     "git-commit-msg-linter": "^2.4.2",
     "husky": "^7.0.2",
     "jest": "^25.5.4",
