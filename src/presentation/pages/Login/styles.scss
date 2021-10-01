@@ -54,26 +54,6 @@ button {
 
   height: 100vh;
 
-  .header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    border-top: 4rem solid $primaryDark;
-    background-color: $primary;
-
-    img {
-      margin: 4rem 0 0;
-    }
-
-    h1 {
-      margin: 1.6rem 0 4rem;
-
-      color: $white;
-      font-size: 1.6rem;
-    }
-  }
-
   .form {
     align-self: center;
     display: flex;
@@ -147,10 +127,5 @@ button {
         font-size: 1.4rem;
       }
     }
-  }
-
-  .footer {
-    height: 4.8rem;
-    background-color: $primary;
   }
 }
