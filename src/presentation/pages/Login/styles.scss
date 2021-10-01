@@ -75,26 +75,6 @@ button {
       text-transform: uppercase;
     }
 
-    .inputWrapper {
-      position: relative;
-
-      display: flex;
-      align-items: center;
-
-      margin: 0 0 2.4rem;
-
-      input {
-        flex-grow: 1;
-      }
-
-      .status {
-        position: absolute;
-        right: 0.8rem;
-
-        cursor: help;
-      }
-    }
-
     .submit {
       margin: 0 0 1.6rem;
     }
