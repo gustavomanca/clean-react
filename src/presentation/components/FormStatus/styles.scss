@@ -1,0 +1,18 @@
+@import '../../styles/colors.scss';
+
+.errorWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .spinner {
+    margin: 3.2rem 0 0;
+  }
+
+  .error {
+    margin: 3.2rem 0 0;
+
+    color: $primaryLight;
+    font-size: 1.4rem;
+  }
+}
