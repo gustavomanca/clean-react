@@ -1,0 +1,154 @@
+@import "../../styles/colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+}
+
+input[type='email'],
+input[type='password'] {
+  border: 0.1rem solid $primaryLight;
+  border-radius: 0.4rem;
+  padding: 0 2.4rem 0 0.8rem;
+
+  font-size: 1.4rem;
+  line-height: 4rem;
+
+  &:focus {
+    outline: $primaryDark;
+  }
+}
+
+button {
+  border: none;
+  border-radius: 0.8rem;
+
+  background-color: $primary;
+
+  color: $white;
+  font-size: 1.6rem;
+  line-height: 6rem;
+
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  will-change: opacity;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+
+  .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border-top: 4rem solid $primaryDark;
+    background-color: $primary;
+
+    img {
+      margin: 4rem 0 0;
+    }
+
+    h1 {
+      color: $white;
+      margin: 1.6rem 0 4rem;
+    }
+  }
+
+  .form {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0.8rem;
+    padding: 4rem;
+    width: 40rem;
+
+    background-color: $white;
+    box-shadow: 0 0.1rem 0.3rem -0.1rem rgba($black, 0.1);
+
+    h2 {
+      margin: 0 0 2.4rem;
+
+      color: $primaryDark;
+      font-size: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .inputWrapper {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+
+      margin: 0 0 2.4rem;
+
+      input {
+        flex-grow: 1;
+      }
+
+      .status {
+        position: absolute;
+        right: 0.8rem;
+
+        cursor: help;
+      }
+    }
+
+    .submit {
+      margin: 0 0 1.6rem;
+    }
+
+    .link {
+      color: $primary;
+      font-size: 1.4rem;
+      text-align: center;
+
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .errorWrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .spinner {
+        margin: 3.2rem 0 0;
+      }
+
+      .error {
+        margin: 3.2rem 0 0;
+
+        color: $primaryLight;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .footer {
+    height: 4.8rem;
+    background-color: $primary;
+  }
+}
